@@ -2,6 +2,8 @@
 
 A fast GPU canvas/image wall viewer built with Rust and wgpu.
 
+![nenarwia preview](.github/preview.jpg)
+
 ## 🚀 Download
 
 Grab the latest Windows build from the releases page:
