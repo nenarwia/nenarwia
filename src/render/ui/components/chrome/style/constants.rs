@@ -1,0 +1,40 @@
+use super::super::super::CHROME_HEIGHT_PX;
+
+pub(super) const CHROME_SCRIM_COLOR: [u8; 4] = [0, 0, 0, 153];
+pub(super) const WINDOW_CLOSE_COLOR: [u8; 4] = [255, 95, 87, 255];
+pub(super) const WINDOW_MINIMIZE_COLOR: [u8; 4] = [254, 188, 46, 255];
+pub(super) const WINDOW_MAXIMIZE_COLOR: [u8; 4] = [40, 200, 64, 255];
+
+pub(super) const TAB_TOP_PX: u32 = 0;
+pub(super) const TAB_HEIGHT_PX: u32 = CHROME_HEIGHT_PX;
+pub(super) const TAB_RADIUS_PX: f32 = 0.0;
+pub(super) const TAB_GAP_PX: u32 = 8;
+pub(super) const TAB_TEXT_SIZE: f32 = 11.5;
+pub(super) const TAB_TEXT_SIDE_PADDING_PX: u32 = 12;
+pub(super) const TAB_MIN_WIDTH_PX: u32 = 78;
+pub(super) const TAB_MIN_VISIBLE_WIDTH_PX: u32 = 52;
+pub(super) const TAB_MAX_WIDTH_PX: u32 = 168;
+pub(super) const TAB_CLOSE_SIZE_PX: u32 = 12;
+pub(super) const TAB_CLOSE_SIDE_INSET_PX: u32 = 8;
+pub(super) const TAB_CLOSE_TEXT_SIZE: f32 = 10.0;
+pub(super) const TAB_CLOSE_TEXT_GAP_PX: u32 = 6;
+pub(super) const ADD_TAB_SIZE_PX: u32 = 18;
+pub(super) const MIN_DRAG_WIDTH_PX: u32 = 92;
+
+pub(super) const TAB_ACTIVE_BORDER: [u8; 4] = [255, 255, 255, 30];
+pub(super) const TAB_ACTIVE_FILL: [u8; 4] = [62, 63, 67, 214];
+pub(super) const TAB_ACTIVE_GLOSS: [u8; 4] = [255, 255, 255, 10];
+pub(super) const TAB_INACTIVE_FILL: [u8; 4] = [255, 255, 255, 6];
+pub(super) const TAB_HOVER_FILL: [u8; 4] = [255, 255, 255, 12];
+pub(super) const TAB_TEXT_COLOR: [u8; 4] = [245, 245, 247, 244];
+pub(super) const TAB_INACTIVE_TEXT: [u8; 4] = [226, 226, 231, 178];
+pub(super) const TAB_DIVIDER_COLOR: [u8; 4] = [255, 255, 255, 18];
+pub(super) const TAB_CLOSE_FILL: [u8; 4] = [255, 255, 255, 0];
+pub(super) const TAB_CLOSE_HOVER_FILL: [u8; 4] = [255, 255, 255, 18];
+pub(super) const TAB_CLOSE_TEXT: [u8; 4] = [244, 244, 247, 196];
+pub(super) const TAB_CLOSE_HOVER_TEXT: [u8; 4] = [255, 255, 255, 240];
+pub(super) const TAB_ADD_BORDER: [u8; 4] = [255, 255, 255, 24];
+pub(super) const TAB_ADD_FILL: [u8; 4] = [255, 255, 255, 8];
+pub(super) const TAB_ADD_HOVER_BORDER: [u8; 4] = [255, 255, 255, 44];
+pub(super) const TAB_ADD_HOVER_FILL: [u8; 4] = [255, 255, 255, 18];
+pub(super) const TAB_ADD_TEXT: [u8; 4] = [232, 232, 235, 214];

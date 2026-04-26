@@ -1,0 +1,9 @@
+pub(super) const DIALOG_WIDTH_PX: u32 = 440;
+pub(super) const DIALOG_HEIGHT_PX: u32 = 400;
+pub(super) const PREVIEW_RECT_LOCAL: [u32; 4] = [20, 50, 400, 220];
+pub(super) const TOGGLE_RECT_LOCAL: [u32; 4] = [20, 280, 190, 34];
+pub(super) const DIM_RECT_LOCAL: [u32; 4] = [20, 318, 400, 26];
+pub(super) const DIM_TRACK_LEFT_PAD_PX: u32 = 150;
+pub(super) const DIM_TRACK_RIGHT_PAD_PX: u32 = 16;
+pub(super) const CANCEL_RECT_LOCAL: [u32; 4] = [236, 352, 90, 32];
+pub(super) const APPLY_RECT_LOCAL: [u32; 4] = [332, 352, 90, 32];
