@@ -21,12 +21,19 @@ Install Rust, then run:
 
 ```powershell
 cargo build --release --locked
-The executable will be created at:
-target/release/nenarwia.exe
+```
 
-License
+The executable will be created at:
+
+```text
+target/release/nenarwia.exe
+```
+
+## License
+
 This project is licensed under the MIT License.
 
 Third-party components are distributed under their respective licenses. See:
-THIRD_PARTY_NOTICES.md
-third_party/licenses/
+
+- `THIRD_PARTY_NOTICES.md`
+- `third_party/licenses/`
