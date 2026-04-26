@@ -1,21 +1,27 @@
-# nenarwia
+# ✨ nenarwia
 
 A fast GPU canvas/image wall viewer built with Rust and wgpu.
 
-## Status
+## 🚀 Download
+
+Grab the latest Windows build from the releases page:
+
+https://github.com/nenarwia/nenarwia/releases/latest
+
+## 🧭 Status
 
 Early open-source release. The project is currently focused on Windows desktop usage.
 
-## Features
+## ✨ Features
 
-- GPU rendering with `wgpu`
-- Zoomable image canvas / image wall
-- Custom window chrome
-- Thumbnail and tile caching
-- RGBA/LZ4 tile cache
-- JPEG decoding acceleration through `turbojpeg` / `libjpeg-turbo`
+- ⚡ GPU rendering with `wgpu`
+- 🖼️ Zoomable image canvas / image wall
+- 🪟 Custom window chrome
+- 🧩 Thumbnail and tile caching
+- 📦 RGBA/LZ4 tile cache
+- 📷 JPEG decoding acceleration through `turbojpeg` / `libjpeg-turbo`
 
-## Build
+## 🛠️ Build
 
 Install Rust, then run:
 
@@ -29,7 +35,7 @@ The executable will be created at:
 target/release/nenarwia.exe
 ```
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License.
 
