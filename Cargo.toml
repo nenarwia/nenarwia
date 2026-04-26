@@ -1,0 +1,78 @@
+[package]
+name = "nenarwia"
+version = "0.1.0"
+edition = "2021"
+
+# Настройки для оптимизации (в будущем пригодятся для release сборки)
+[profile.release]
+lto = true
+codegen-units = 1
+strip = "symbols"
+
+[dependencies]
+# Оконный менеджер. Стандарт де-факто в Rust.
+winit = "0.29"
+
+# Графическое ядро. Работает поверх Vulkan/Metal/DX12.
+wgpu = "28.0.0"
+
+# Минимальный runtime для запуска асинхронного кода (нужен для wgpu).
+pollster = "0.3"
+
+# Логирование. Без него мы будем слепыми.
+log = "0.4"
+env_logger = "0.11"
+bytemuck = { version = "1.14", features = ["derive"] }
+cgmath = "0.18"
+image = "0.25.9"
+fast_image_resize = "6.0"
+jpeg-decoder = "0.3"
+turbojpeg = { version = "1.4", default-features = false, features = ["cmake", "require-simd"] }
+moxcms = "0.7.11"
+ab_glyph = "0.2"
+windows = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Dwm",
+    "Win32_Graphics_Gdi",
+    "Win32_Graphics_Imaging",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Com",
+    "Win32_System_Console",
+    "Win32_System_ProcessStatus",
+    "Win32_System_SystemInformation",
+    "Win32_System_Threading",
+    "Win32_System_WinRT",
+    "Win32_UI_Shell",
+    "Win32_UI_Shell_Common",
+    "Win32_UI_WindowsAndMessaging",
+    "Foundation",
+    "Graphics_Imaging",
+    "Storage",
+    "Storage_Streams",
+] }
+# Пространственный индекс (R-Tree)
+anyhow = "1.0"
+walkdir = "2.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+# Fast compression for on-disk tile/thumbnail cache (AAA/Maps-style).
+lz4_flex = "0.11"
+
+# NVIDIA VRAM (total/used/free) for dynamic cache budgeting.
+# Uses NVML (ships with NVIDIA drivers). On non-NVIDIA systems this will
+# gracefully fail at runtime and the engine will fall back to safe defaults.
+nvml-wrapper = "0.11"
+rayon = "1.10"
+rfd = "0.14"
+sha2 = "0.10"
+
+[target.'cfg(windows)'.build-dependencies]
+winresource = "0.1"
+
+[features]
+compute_culling = []
+debug_slots_ui = []
+[profile.dev.package."*"]
+opt-level = 3
